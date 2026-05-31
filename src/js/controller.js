@@ -219,6 +219,9 @@ const controlAddIngredient = function () {
   // 3. Open the modal (View)
   shoppingListView.open();
 };
+const newFeatures = function(){
+  console.log('welcone to the application');
+}
 
 /**
  * Initialises the application by subscribing controller functions to
@@ -239,6 +242,6 @@ const init = function () {
   searchView.addHandlerSearch(controleSearchResults);
   paginationView._addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('welcome');
+  newFeatures()
 };
 init();
