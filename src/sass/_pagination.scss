@@ -1,0 +1,23 @@
+.pagination__wrapper {
+  display: flex;
+  justify-content: space-between; /* Pushes Prev to far left, Next to far right */
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  position: relative; /* Required to perfectly center the text */
+}
+
+.pagination__page-info {
+  font-size: 1.4rem;
+  font-weight: 300; /* Makes the font lighter */
+  pointer-events: none; /* Prevents text from blocking button clicks */
+  
+  /* COLOR OPTIONS: Uncomment the one you prefer */
+  color: #999; /* Light Grey */
+  // color: #f48c5b; /* Forkify Light Orange */
+  
+  /* Perfectly centers the text in the middle of the div */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

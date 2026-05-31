@@ -1,0 +1,12 @@
+@import 'base';
+@import 'components';
+@import 'header';
+@import 'preview';
+@import 'searchResults';
+@import 'recipe';
+@import 'upload';
+@import 'pagination';
+@import 'ingredient' ;
+.btn--shopping-list {
+  margin-right: 1.5rem; /* Adjust this value to increase/decrease the gap */
+}

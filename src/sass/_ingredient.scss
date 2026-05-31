@@ -1,0 +1,61 @@
+.shopping-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 3rem 4rem;
+  border-radius: 8px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 320px;
+  max-width: 400px;
+  transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.shopping-list.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.shopping-list h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn--close-shopping {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 2.8rem;
+  cursor: pointer;
+  color: #555;
+  line-height: 1;
+}
+
+.btn--close-shopping:hover {
+  color: #000;
+}
+
+.shopping-list__list {
+  list-style: none;
+  margin-top: 2rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.shopping-list__list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.shopping-list__list li:last-child {
+  border-bottom: none;
+}
