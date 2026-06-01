@@ -8,7 +8,7 @@
   "defaul":"index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "node ./node_modules/parcel/lib/bin.js build index.html --dist-dir ./dist"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.4",
